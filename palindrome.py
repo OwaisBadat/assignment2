@@ -1,27 +1,15 @@
-word = (input("Which word woudl you like to check: "))
-
-#def reverse(word):
+user_input = str(input("What is the your word: "))
 
 
-for index in range(len(word)-1,-1,-1):
-    print(word[index])
+#extened slice syntax
+#slice[start:stop:step]
+#colon instead of an index number will assume "start" for first color "end" for second colon
+#if step is negative it will run in reverse
+reverse_word = user_input[::-1])
 
-reverse_word = 
-
-for index in range(0,len(word)):
-    print(word[index])
-
-
-#def reverse(word):
-#    for index in range(len(word)):
-#        x = range(len(word),1,-1)
-#x = range(len(word),1,-1)
-
-#word = (input("Which word woudl you like to check: "))
-
-#x = reverse(word)
-
-#if reverse_word == word:
-#    print("This is a palindrome")
-#else:
-#    print("This is NOT a palindrom")
+def is_palindrome(reverse_word):
+    if(reverse_word == user_input):
+        return("{0} is a palindrome!".format(user_input))
+    else:
+        return("{0} is NOT a palindrome!".format(user_input))
+print(is_palindrome(reverse_word))
